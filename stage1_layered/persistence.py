@@ -37,13 +37,7 @@ def save_order(order):
     order["id"] = len(orders)+1
     orders[order["id"]] = order
     return order
-    # TODO step 1: give the order the next id, store it in `orders` and return it
-    raise NotImplementedError("TODO step 1")
 
 
 def find_order(order_id):
-    if not orders.get(order_id):
-        return None
     return orders.get(order_id)
-    # TODO step 1: return the order, or None if it does not exist
-    raise NotImplementedError("TODO step 1")
